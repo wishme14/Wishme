@@ -1,0 +1,109 @@
+/* Outer Container: Centered with a pure white background */
+.support-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    width: 100%;
+    background: rgb(255, 255, 255); /* Pure white background */
+  }
+  
+  /* Inner Content: 90% width of the outer container, with a clean white background and enhanced shadow */
+  .support-content {
+    width: 90%;
+    max-width: 1100px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 3rem;
+    text-align: center;
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  /* Top heading style */
+  .support-title {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #777; /* Gray color */
+    font-family: "Arial", sans-serif;
+  }
+  
+  /* Heading: Elegant font with a gradient text effect */
+  .support-heading {
+    font-size: 2.8rem;
+    font-family: "Playfair Display", serif;
+    background: linear-gradient(90deg, #ff3366, #ff6600);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+  
+  /* Subheading: Clean sans-serif font in a subtle gray */
+  .support-subheading {
+    font-size: 1.3rem;
+    font-family: "Montserrat", sans-serif;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+  
+  /* Image Wrapper: Centered image container with spacing */
+  .support-image-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+  
+  /* Image: Responsive, with rounded corners and shadow, with a hover scale effect */
+  .support-image {
+    width: 50%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  .support-image:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Button: Modern gradient button with a rounded-pill shape and hover animation */
+  .support-button {
+    background: linear-gradient(135deg, #ff4500, #ff6600);
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    width: 22%;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 1rem;
+  }
+  .support-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(255, 111, 0, 0.8);
+  }
+  
+  /* Small Text: Subtle and modern */
+  .support-text {
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    color: #777;
+  }
+  
+  /* Fade In Up Animation for a smooth entrance */
+  @keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  

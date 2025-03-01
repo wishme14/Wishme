@@ -1,0 +1,59 @@
+/* TrustMessage.css */
+
+.trust-container {
+    background-color: #fdfcf7;
+    padding: 3rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .trust-heading {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .trust-heading h1 {
+    font-size: 3rem; /* Larger heading size */
+    color: #000;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  
+  .trust-heading h1 span {
+    color: #6c757d; /* Muted gray for the second line */
+    font-weight: 600;
+  }
+  
+  .trust-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .trust-column {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .trust-bullet {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+  }
+  
+  .trust-icon {
+    font-size: 2rem;
+    color: #28a745; /* Green color for the check icon */
+    margin-right: 1rem;
+    flex-shrink: 0;
+  }
+  
+  /* Enhanced typography for paragraphs with bigger text */
+  .trust-bullet p {
+    margin: 0;
+    font-size: 1.125rem; /* Increased font size for bigger text */
+    color: #000;
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.3px;
+  }
