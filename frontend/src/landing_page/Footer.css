@@ -1,0 +1,88 @@
+/* Footer container styling matching Navbar font settings */
+.footer {
+    background-color: rgba(108, 117, 125, 0.5);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 550;
+    color: var(--text-color);
+  }
+  
+  /* All footer links use the same text color and font settings */
+  .footer a,
+  .footer a:visited,
+  .footer a:hover,
+  .footer a:active {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  /* Base styling for footer links and dropdown toggles */
+  .footer-link,
+  .footer-dropdown-toggle {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 0.8rem;
+    border-radius: 999px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Hover effect for footer links and dropdown toggles */
+  .footer-link:hover,
+  .footer-dropdown-toggle:hover {
+    color: var(--primary-color);
+    background-color: var(--hover-bg);
+    transform: scale(1.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Remove default caret (triangle) for dropdown toggles */
+  .footer-dropdown-toggle::after {
+    display: none !important;
+  }
+  
+  /* Dropdown icon transition and rotation */
+  .dropdown-icon {
+    transition: transform 0.3s ease;
+    margin-left: 0.3rem;
+  }
+  
+  .rotate {
+    transform: rotate(180deg);
+  }
+  
+  /* Dropdown menu styling */
+  .footer .dropdown-menu {
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Dropdown item styling with icons and hover effect */
+  .footer .dropdown-menu .dropdown-item {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+  }
+  
+  .footer .dropdown-menu .dropdown-item i {
+    margin-right: 0.5rem;
+  }
+  
+  .footer .dropdown-menu .dropdown-item:hover {
+    background-color: var(--hover-bg);
+    color: var(--primary-color);
+  }
+  
+  /* Social media icons size */
+  .footer-right i {
+    font-size: 1.3rem;
+  }
+  
+  /* Custom spacing for elements in the center section */
+  .small-gap {
+    margin-left: 0.15rem !important;
+    margin-right: 0.15rem !important;
+  }

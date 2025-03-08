@@ -1,0 +1,214 @@
+.navbar-wrapper {
+  font-family: 'Quicksand', sans-serif; /* Use Quicksand for the navbar */
+}
+
+:root {
+--primary-color: #5e4ae3;  /* Brand Purple */
+--accent-color: #ff6b81;   /* Accent Pink */
+--text-color: #000;     /* Base Text */
+--bg-color: #ffffff;       /* Navbar Background */
+--brand-yellow: #ffd100;   /* For Sign up button */
+--heart-color: #ff0000;    /* Red heart icon */
+--hover-bg: #f8f9fa;       /* Hover background */
+}
+
+/* Overall Navbar */
+.custom-navbar {
+font-family: 'Open Sans', sans-serif;
+border: none;
+border-bottom: none; /* Removed bottom border */
+box-shadow: none !important;
+padding: 1rem 0;
+position: sticky; /* Make navbar sticky */
+top: 10px;          /* Stick to the top */
+z-index: 1000;   /* Ensure it stays above other content */
+transition: transform 0.3s ease-in-out;
+transform: translateY(0); /* Ensure navbar is visible on page load */
+}
+
+.custom-navbar.navbar-hidden {
+transform: translateY(-100%);
+}
+
+/* Custom container with minimal side padding */
+.custom-container {
+max-width: 1200px;
+margin: 0 auto;
+padding-left: 4px;
+padding-right: 4px;
+}
+
+/* Left Section */
+.navbar-left {
+list-style: none;
+display: flex;
+gap: 1.5rem;
+margin: 0;
+padding: 0;
+}
+
+.nav-link {
+text-decoration: none;
+color: var(--text-color);
+font-weight: 550;
+font-size: 0.95rem;
+transition: color 0.3s ease, background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.nav-link:hover {
+color: var(--primary-color);
+background-color: var(--hover-bg);
+opacity: 0.9;
+}
+
+/* Heart Icon */
+.heart-icon {
+color: var(--heart-color);
+font-size: 0.95rem;
+vertical-align: middle;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+background: var(--bg-color);
+border: none;
+border-radius: 0.5rem;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+margin-top: 0.5rem;
+padding: 0.5rem 0;
+}
+
+.dropdown-item {
+font-size: 0.9rem;
+padding: 0.5rem 1rem;
+color: var(--text-color);
+transition: background-color 0.2s ease, opacity 0.3s ease;
+}
+
+.dropdown-item:hover {
+background-color: var(--hover-bg);
+opacity: 0.9;
+}
+
+/* Dropdown Icon */
+.dropdown-icon {
+font-size: 0.7rem;
+margin-left: 0.5rem;
+vertical-align: middle;
+transition: transform 0.3s ease;
+}
+
+.dropdown-icon.rotate {
+transform: rotate(180deg);
+}
+
+/* Center Section: Logo and Text */
+.navbar-brand {
+display: flex;
+align-items: center;
+justify-content: center;
+text-decoration: none;
+color: var(--text-color);
+}
+
+.brand-logo {
+height: 35px;
+width: 35px;
+}
+
+.brand-text {
+font-family: 'Pacifico', cursive;
+font-size: 1rem;
+font-weight: 550;
+margin-top: 0.6rem;
+}
+
+/* Right Section */
+.navbar-right {
+display: flex;
+align-items: center;
+gap: 1.5rem;
+}
+
+/* Search Bar */
+.search-container {
+position: relative;
+width: 220px;
+}
+
+.search-input {
+width: 100%;
+border: 1px solid #ddd;
+border-radius: 999px;
+padding: 0.5rem 1rem 0.5rem 2.5rem;
+background-color: #f8f9fa;
+font-size: 0.9rem;
+transition: width 0.3s ease, border-color 0.3s ease;
+}
+
+.search-input:focus {
+outline: none;
+border-color: var(--primary-color);
+}
+
+.search-icon {
+position: absolute;
+left: 10px;
+top: 50%;
+transform: translateY(-50%);
+color: #6c757d;
+font-size: 0.9rem;
+}
+
+/* Login Link */
+.login-link {
+text-decoration: none;
+color: var(--text-color);
+font-weight: 550;
+font-size: 0.95rem;
+transition: color 0.3s ease, background-color 0.3s ease, opacity 0.3s ease;
+padding: 0.5rem 1rem;
+border-radius: 999px;
+}
+
+.login-link:hover {
+color: var(--primary-color);
+background-color: var(--hover-bg);
+opacity: 0.9;
+}
+
+/* Sign Up Button */
+.signup-btn {
+background: linear-gradient(to right, #ff0000, #ff7f00);
+color: #fff;
+border: none;
+border-radius: 999px;
+color: #000;
+font-weight: 550;
+font-size: 0.95rem;
+padding: 0.5rem 1rem;
+cursor: pointer;
+transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+opacity: 0.9;
+background: linear-gradient(to right, #e60000, #e06e00);
+}
+
+/* Hover Effect for Navbar Elements */
+.hover-effect {
+transition: background-color 0.3s ease, opacity 0.3s ease;
+padding: 0.5rem 1rem;
+border-radius: 999px;
+}
+
+.hover-effect:hover {
+background-color: var(--hover-bg);
+opacity: 0.9;
+}
+
+/* Hide the default Bootstrap caret from .dropdown-toggle */
+.nav-link.dropdown-toggle::after {
+  display: none !important;
+}
