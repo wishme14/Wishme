@@ -18,8 +18,8 @@ function Footer() {
     <footer className="footer py-5">
       <div className="container d-flex flex-column flex-md-row justify-content-between align-items-center">
         {/* Left Section */}
-        <div className="mb-2 mb-md-0 footer-left">
-          © by <strong>Wish Me</strong>
+        <div className="mb-2 mb-md-0 footer-left text-muted">
+             &copy; by <strong>Wish Me</strong>
         </div>
         
         {/* Middle Section: Navigation Links & Dropdowns */}
@@ -68,11 +68,6 @@ function Footer() {
               <i className={`fa-solid fa-chevron-up dropdown-icon ${isResourcesOpen ? "rotate" : ""}`}></i>
             </Link>
             <ul className="dropdown-menu" aria-labelledby="resourcesDropdown">
-              <li>
-                <Link className="dropdown-item" to="">
-                  <i className="fa-solid fa-book me-2"></i> Docs
-                </Link>
-              </li>
               <li>
                 <Link className="dropdown-item" to="/faq">
                   <i className="fa-solid fa-question me-2"></i> FAQ

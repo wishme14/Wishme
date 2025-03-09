@@ -4,31 +4,33 @@ import "./Navbar.css";
 
 function Navbar() {
   const [visible, setVisible] = useState(true);
-  const prevScrollPos = useRef(0); // Use a ref instead of state
+  const prevScrollPos = useRef(0);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
-      // Show navbar if scrolling up or near the top
-      setVisible(prevScrollPos.current > currentScrollPos || currentScrollPos < 10);
+
+      // Show navbar if near the top or if scrolling up
+      if (currentScrollPos < 50 || prevScrollPos.current > currentScrollPos) {
+        setVisible(true);
+      } else {
+        setVisible(false);
+      }
+
       prevScrollPos.current = currentScrollPos;
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []); // No dependencies needed because ref updates don't trigger re-renders
+  }, []);
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
 
   return (
-    <nav
-      className={`custom-navbar bg-white shadow-sm py-2 ${
-        visible ? "sticky-top" : "navbar-hidden"
-      }`}
-    >
+    <nav className={`custom-navbar shadow-sm ${visible ? "" : "navbar-hidden"}`}>
       <div className="container-fluid custom-container">
         <div className="row align-items-center">
           {/* Left Section */}
