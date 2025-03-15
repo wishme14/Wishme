@@ -1,14 +1,17 @@
 import React from "react";
+import "./Home.css";
+import Sidebar from "./Sidebar";
+import DashboardPage from "./dashboard/DashboardPage";
 
 function Home() {
-    return (
-      <div>
-        <h1>Home App</h1>
-        <p>
-          Dashboard First App.
-        </p>
+  return (
+    <div className="dashboard-container">
+      <Sidebar />
+      <div className="main-content">
+        <DashboardPage />
       </div>
-    );
-  }
-  
-  export default Home;
+    </div>
+  );
+}
+
+export default Home;

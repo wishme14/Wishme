@@ -1,0 +1,83 @@
+/* Import the Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.sidebar {
+  position: fixed;       /* Stays in place while scrolling */
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;         /* Full viewport height */
+  background-color: #fff5e6; /* Light festive background color */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-right: 1px solid #ddd;
+  z-index: 9999;         /* Ensures it's above other elements (including banner) */
+  overflow-y: auto;      /* Make it scrollable */
+  box-sizing: border-box;
+  color: #333;           /* Dark text color */
+  font-family: 'Poppins', sans-serif; /* Modern and clean font */
+}
+
+.sidebar .logo {
+  font-size: 20px;       /* Adjusted font size */
+  font-weight: 600;      /* Semi-bold weight */
+  color: #d2691e;        /* Chocolate color for the logo */
+  text-align: center;
+  margin-bottom: 15px;   /* Reduced margin */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;          /* Allow the list to grow and fill the space */
+}
+
+.sidebar li {
+  display: flex;
+  align-items: center;
+  padding: 10px;         /* Adjusted padding */
+  border-radius: 8px;
+  transition: background 0.3s ease;
+  font-size: 14px;       /* Adjusted font size */
+  font-weight: 400;      /* Normal weight */
+  color: #333;           /* Dark text color */
+  cursor: pointer;
+}
+
+.sidebar li:hover {
+  background-color: #ffe4b5; /* Light festive hover color */
+}
+
+.sidebar li svg {
+  margin-right: 15px;    /* Increased margin for proper spacing */
+  color: #d2691e;        /* Chocolate color for icons */
+}
+
+.active {
+  background-color: #ffe4b5; /* Light festive color for active item */
+  font-weight: 600;      /* Semi-bold weight */
+}
+
+.sidebar .gift-icon {
+  font-size: 18px;       /* Adjusted font size */
+  color: #d2691e;
+  margin-right: 15px;    /* Increased margin for proper spacing */
+}
+
+/* Additional styling for better visual appeal */
+.sidebar hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 10px 0;
+}
+
+.sidebar .section-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #d2691e;
+  margin: 10px 0 5px 0;
+  text-transform: uppercase;
+}
