@@ -33,7 +33,7 @@ function ProfileCard() {
 
       {/* Earnings section */}
       <div className="earnings-header">
-        <h3 className="earnings-title">Earnings</h3>
+        <h3 className="earnings-title">Gifts Value</h3>
         <select className="earnings-filter">
           <option>Last 30 days</option>
           <option>Last 7 days</option>
